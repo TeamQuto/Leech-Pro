@@ -70,7 +70,7 @@ async def incoming_message_f(client, message):
             LOGGER.info(cf_name)
         else:
             if user_command == LEECH_COMMAND.lower():
-                await i_m_sefg.edit("No download source provided 🙄")
+                await i_m_sefg.edit("No download source provided 🙅")
                 return
             is_file = True
             dl_url = rep_mess
@@ -216,7 +216,7 @@ async def g_yt_playlist(client, message):
     if "youtube.com/playlist" in url:
         u_men = message.from_user.mention
         i_m_sefg = await message.reply_text(
-            f"<b>Ok Fine 🐈 {u_men} Janu!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
+            f"<b>Ok Fine 💃 {u_men} Janu!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
             parse_mode="html",
         )
         await yt_playlist_downg(message, i_m_sefg, client, is_cloud)
